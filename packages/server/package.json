@@ -1,0 +1,19 @@
+{
+  "name": "@xmetaki/userver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "dev": "pnpm build --watch",
+    "build": "pnpm exec esbuild ./src/** --outdir=lib --bundle --platform=node  --external:esbuild",
+    "prod": "node ./lib/index.js"
+  },
+  "keywords": [],
+  "author": "xmetaki",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "ws": "^8.16.0"
+  }
+}

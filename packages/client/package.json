@@ -1,0 +1,13 @@
+{
+  "name": "@xmetaki/uclient",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "dev": "pnpm build --watch",
+    "build": "pnpm exec esbuild ./src/** --outdir=lib --bundle --external:esbuild"
+  },
+  "keywords": [],
+  "author": "xmetaki",
+  "license": "MIT"
+}
